@@ -1,0 +1,25 @@
+@import "../../variable";
+
+#footer {
+  background-color: $grey;
+  color: $white;
+  padding: $padding-x * 2 $padding-x; 
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  text-align: center;
+  img {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+    animation: beating 0.5s linear infinite alternate;
+  }
+}
+
+@keyframes beating {
+  0%   {transform: scale(1,1);}
+  100% {transform: scale(1.2,1.2);}
+}

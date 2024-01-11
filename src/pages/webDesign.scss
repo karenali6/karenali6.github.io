@@ -1,0 +1,225 @@
+@import "../variable";
+
+#web_design {
+  .banner {
+    position: relative;
+    margin-bottom: $padding-y * 5;
+
+    @media (min-width: $lg) {
+      margin-bottom: $padding-y * 10;
+    }
+
+    .image {
+      img {
+        height: 100vh;
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 0 $padding-x;
+      margin: auto;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: $white;
+      text-transform: uppercase;
+
+      @media (min-width: $lg) {
+        font-size: 50px;
+      }
+    }
+
+    .content {
+      padding: $padding-x;
+      color: $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      @media (min-width: $lg) {
+        padding-bottom: $padding-y * 5;
+      }
+
+      .keypoint {
+        display: flex;
+
+        @media (min-width: $lg) {
+          padding-left: calc((100vw - $lg-max-width - $padding-x) / 2);
+        }
+
+        @media (min-width: $xl) {
+          padding-left: calc((100vw - $xl-max-width - $padding-x) / 2);
+        }
+
+        @media (min-width: $xxl) {
+          padding-left: calc((100vw - $xxl-max-width - $padding-x) / 2);
+        }
+
+        div {
+          line-height: 1.5;
+
+          &:nth-child(2) {
+            margin: 0 $padding-x;
+
+            @media (min-width: $sm) {
+              margin: 0 $padding-x * 4;
+            }
+          }
+
+          span {
+            &::before {
+              content: "\a";
+              white-space: pre;
+
+              @media (min-width: $sm) {
+                white-space: normal;
+              }
+            }
+          }
+        }
+      }
+
+      .icons {
+        display: flex;
+        flex-direction: column;
+        min-width: 30px;
+        @media (min-width: $lg) {
+          flex-direction: row;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        @media (min-width: $lg) {
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+
+    @media (min-width: $lg) {
+      font-size: 40px;
+    }
+  }
+
+  p,
+  ol {
+    font-size: 16px;
+
+    @media (min-width: $lg) {
+      font-size: 24px;
+    }
+  }
+
+  .btn {
+    text-transform: uppercase;
+
+    @media (min-width: $lg) {
+      padding: $padding-y $padding-x * 5;
+    }
+  }
+
+  .center {
+    text-align: center; 
+  }
+
+  .wrapper {
+    @include container();
+  }
+
+  .section {
+    margin-bottom: $padding-y * 10;
+
+    @media (min-width: $lg) {
+      margin-bottom: $padding-y * 15;
+    }
+  }
+
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: $padding-y * 10;
+    @media (min-width: $lg) {
+      margin-bottom: $padding-y * 15;
+    }
+
+    &.two {
+      .image {
+        @media (min-width: $lg) {
+          flex-basis: 48%;
+        }
+      }
+    }
+
+    .image {
+      flex-basis: 100%;
+      text-align: center;
+      &:not(:last-child) {
+        margin-bottom: $padding-y * 5;
+      }
+      @media (min-width: $lg) {
+        flex-basis: 32%;
+      }
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  .bg {
+    @media (min-width: $lg) {
+      padding-top: $padding-y * 15;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: $white-300;
+        z-index: -1;
+      }
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-bottom: $padding-y * 5;
+    font-size: 32px;
+    &:hover {
+      color: $black;
+    }
+    img {
+      margin-right: $padding-x * 2;
+      margin-bottom: 0;
+    }
+  }
+}

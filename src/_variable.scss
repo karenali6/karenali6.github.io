@@ -1,0 +1,62 @@
+$header-mobile-height: 54px;
+$header-height: 54px;
+$white-500 :#e7eeef;
+$white-400: #e8e8e8;
+$white-300: #f4f4f4;
+$white-200: #fcfcfc;
+$white-100: #FAFAFA;
+$white: #FFFFFF;
+$black-100: #272727;
+$black: #000000;
+$lightdark : #666666;
+$dark :#040404;
+$red: #C70000;
+$pink: #FF33A0;
+$lightgrey-200: #d9d9d9;
+$lightgrey-100: #f9f9f9;
+$lightgrey: #B2B2B2;
+$grey: #4A4A4A;
+$lightblue: #0097BD;
+$blue: #0d6c8f;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$sm-max-width: 540px;
+$md-max-width: 720px;
+$lg-max-width: 960px;
+$xl-max-width: 1140px;
+$xxl-max-width: 1320px;
+
+$padding-x: 20px;
+$padding-y: 10px;
+$border-radius: 20px;
+
+@mixin container {
+  width: 100%;
+  padding-left: $padding-x;
+  padding-right: $padding-x;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $sm) {
+    max-width: $sm-max-width;
+  }
+
+  @media (min-width: $md) {
+    max-width: $md-max-width;
+  }
+
+  @media (min-width: $lg) {
+    max-width: $lg-max-width;
+  }
+
+  @media (min-width: $xl) {
+    max-width: $xl-max-width;
+  }
+
+  @media (min-width: $xxl) {
+    max-width: $xxl-max-width;
+  }
+}
