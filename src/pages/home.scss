@@ -7,6 +7,7 @@
 }
 #home {
   @include container();
+  overflow-x: hidden;
   margin-top: $padding-y * 15;
   @media (min-width: $lg) {
     margin-top: $padding-y * 20;
