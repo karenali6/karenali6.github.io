@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
@@ -21,7 +21,7 @@ import ScrollButton from './components/ScrollButton';
 
 export default function MainApp() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -41,7 +41,7 @@ export default function MainApp() {
           </Route>
         </Routes>
       </ScrollToTop>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
