@@ -1,21 +1,29 @@
-@import "../variable";
-
 .contact {
-  @include container();
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition: all 1s;
   text-align: center;
   margin-bottom: $padding-y * 10;
+  &.scrolled {
+    top: 0;
+    opacity: 1;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $padding-y * 20;
+  }
   .title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: $padding-y * 4;
-    @media (min-width: $lg) {
+    @include media-breakpoint-up(lg) {
       font-size: 40px;
     }
   }
   .btn {
     text-transform: uppercase;
-    @media (min-width: $lg) {
-      padding: $padding-y $padding-x * 5;
+    @include media-breakpoint-up(lg) {
+      padding: $padding-y 100px;
     }
   }
 }
