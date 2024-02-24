@@ -2,15 +2,16 @@
 @import "font";
 @import "variable";
 @import '~bootstrap/scss/bootstrap.scss';
+@import "./components/backButton.scss";
 @import "./components/backToTopButton.scss";
 @import "./components/header/header.scss";
 @import "./components/footer/footer.scss";
 @import "./components/otherProjectButton.scss";
 @import "./components/contact.scss";
-@import "./components/form.scss";
+@import "./components/webForm.scss";
 @import "./pages/badgeDesign.scss";
 @import "./pages/boothDesign.scss";
-@import "./pages/brandDesign.scss";
+@import "./pages/brandIdentity.scss";
 @import "./pages/efSet.scss";
 @import "./pages/home.scss";
 @import "./pages/myStory.scss";
@@ -18,15 +19,34 @@
 @import "./pages/reHome.scss";
 @import "./pages/resume.scss";
 @import "./pages/webDesign.scss";
+@import "./pages/fitsio.scss";
 @import "./pages/letsTalk.scss";
+
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 body {
   overflow-x: hidden;  
 }
+
 button, .btn, .btn.btn-light {
+  text-transform: uppercase;
   border: 1px solid $black;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 30px;
+  background-color: transparent;
   @include media-breakpoint-up(lg) {
-    border: 2px solid $black;
+    border: 1px solid $black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 50px;
   }
   &:hover, &:focus, &:active {
     background-color: $pink;
@@ -34,6 +54,7 @@ button, .btn, .btn.btn-light {
     color: $white;
   }
 } 
+
 .btn.btn-outline-light {
   padding: 0;
   border-color: transparent;
@@ -48,11 +69,22 @@ p {
   line-height: 1.4;
   font-weight: 300;
   font-family: 'Nunito', 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
 ul, ol {
-  line-height: 1.8;
-  padding-left: 1.5em;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding-left: 1.2em;
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+  li {
+    padding-left: 5px;
+    // margin-bottom: 10px;
+  }
 }
 
 img {
@@ -60,4 +92,18 @@ img {
   max-width: 100%;
 }
 
-
+.slick-arrow {
+  &.slick-prev {
+    &::before {
+      content: "\25C0";
+      color: $black;
+    }
+  }
+  
+  &.slick-next {
+    &::before {
+      content: "\25B6";
+      color: $black;
+    }
+  }
+}

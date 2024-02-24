@@ -2,6 +2,7 @@ import React from 'react'
 // import BackButton from '../components/BackButton'
 import OtherProjectsButton from '../components/OtherProjectsButton'
 import banner from "../assets/images/ef_set/banner.png"
+import bannerMobile from "../assets/images/ef_set/banner_mobile.png"
 import XDIcon from "../assets/images/icons/XD.png"
 import PSIcon from "../assets/images/icons/PS.png"
 import AIIcon from "../assets/images/icons/AI.png"
@@ -17,9 +18,12 @@ import Container from 'react-bootstrap/Container';
 
 const EFSet = () => {
   return (
-    <div id='ef_set'>
+    <div id='ef_set' className='project'>
       <div className='banner'>
-        <div className='image'><img src={banner} alt="banner" /></div>
+        <div className='image'>
+          <img src={banner} alt="EF Set banner" className='desktop' />
+          <img src={bannerMobile} alt="EF Set banner" className='mobile' />
+        </div>
         <div className='title'>EF SET TESTS</div>
         <div className='content'>
           <div className='keypoint'>
@@ -39,8 +43,12 @@ const EFSet = () => {
           <p>The EF Standard English Test (EF SET) is an English standard test for non-native English speakers. It is a product of EF Education First​.</p>
           <p>With the EF Standard English Test, EF set out to challenge the status quo - to build a testing solution that not only provides reliable measurement, but is also affordable, simple to use, and always accessible. It is the world's first completely free standardized English test for learners of all levels, from beginner to advanced.</p>
           <p>I was given tasks to understand the exciting brand guidelines and ensure the landing page design aligns with overall brand identity. Determine the content that needs to br included, such as headline, subheadings, key message, call-to-action buttons and supporting visuals.</p>
+        </div>
+        <div className='section'>
           <h2>Problem</h2>
           <p>Through user research, we discovered the problems of confusing design can overwhelm visitor and make it difficult for them to understand the purpose of the page and if landing page lacks a clear and compelling call-to- action, visitors may ne unsure of what action to take next.</p>
+        </div>
+        <div className='section'>
           <h2>Goal</h2>
           <ol>
             <li>Create the landing page aligns with thr overall brand identity in terms of colours, typography and visual style </li>
@@ -50,28 +58,25 @@ const EFSet = () => {
         </div>
       </Container>
       <div className='section gallery'>
-        <div className='image'>
-          <img src={EFSetTest1} alt="EF Set test" loading="lazy"/>
-          {/* <BackButton />  */}
-        </div>
         <Container>
-          <img src={EFSetTest2} alt="EF Set test" loading="lazy"/>
-          <img src={EFSetTest3} alt="EF Set test" loading="lazy"/>
-          <img src={EFSetTest4} alt="EF Set test" loading="lazy"/>
-          <img src={EFSetTest5} alt="EF Set test" loading="lazy"/>
+          <img src={EFSetTest1} alt="EF Set test" loading="lazy" />
+          <img src={EFSetTest2} alt="EF Set test" loading="lazy" />
+          <img src={EFSetTest3} alt="EF Set test" loading="lazy" />
+          <img src={EFSetTest4} alt="EF Set test" loading="lazy" />
+          <img src={EFSetTest5} alt="EF Set test" loading="lazy" />
         </Container>
       </div>
       <Container>
         <div className='section'>
           <div className='flexbox'>
-            <div className='image'><img src={result1} alt="EF Set test" loading="lazy"/></div>
-            <div className='image'><img src={result2} alt="EF Set test" loading="lazy"/></div>
+            <div className='image'><img src={result1} alt="EF Set test" loading="lazy" /></div>
+            <div className='image'><img src={result2} alt="EF Set test" loading="lazy" /></div>
           </div>
         </div>
       </Container>
-      <div className='bg section'>
+      <div className='section'>
         <Container>
-          <img src={mobile} alt="EF Set test" loading="lazy"/>
+          <img src={mobile} alt="EF Set test" loading="lazy" />
         </Container>
       </div>
       <Container>

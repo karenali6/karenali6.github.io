@@ -2,6 +2,7 @@ import React from 'react'
 // import BackButton from '../components/BackButton'
 import OtherProjectsButton from '../components/OtherProjectsButton'
 import banner from "../assets/images/web_design/banner.png"
+import bannerMobile from "../assets/images/web_design/banner_mobile.png"
 import EFIcon from "../assets/images/icons/EF_logo.png"
 import XDIcon from "../assets/images/icons/XD.png"
 import PSIcon from "../assets/images/icons/PS.png"
@@ -17,9 +18,12 @@ import Container from 'react-bootstrap/Container';
 
 const WebDesign = () => {
   return (
-    <div id='web_design'>
+    <div id='web_design' className='project'>
       <div className='banner'>
-        <div className='image'><img src={banner} alt="banner" /></div>
+        <div className='image'>
+          <img src={banner} alt="EF website banner" className='desktop' />
+          <img src={bannerMobile} alt="EF website banner" className='mobile' />
+        </div>
         <div className='title'>
           <img src={EFIcon} alt="EF Englishtown logo" />
         </div>
@@ -38,8 +42,12 @@ const WebDesign = () => {
         <div className='section'>
           <h2>Brief</h2>
           <p>I was given the task to updated new logo, redesign visual content strategy and ensure that the website is responsiveness and optimized for version devices and screen size. Optimize landing pages and forms to improve conversion rates.</p>
+        </div>
+        <div className='section'>
           <h2>Problem</h2>
           <p>Through user research, we discovered the problems of low discoverability, inconsistency, and inefficiency. The flow was confusing and difficult to navigate. Lack of mobile optimization and poor user experience on small screen and content that is not properly adapted for mobile.</p>
+        </div>
+        <div className='section'>
           <h2>Goal</h2>
           <ol>
             <li>Streamlined navigation flow enhances the overall user experience, leading to higher satisfaction</li>
@@ -49,32 +57,29 @@ const WebDesign = () => {
           </ol>
         </div>
       </Container>
-      <div className='bg'>
+      <div className='bg section'>
         <Container>
-          {/* <BackButton /> */}
-          <div className='section center'>
-            <img src={iPadLayout} alt="iPad layout design" loading="lazy"/>
-          </div>
-          <div className='section center'>
-            <img src={desktopDesign2} alt="Englishtown desktop design" loading="lazy"/>
-          </div>
+          <img src={iPadLayout} alt="iPad layout design" loading="lazy" />
         </Container>
+      </div>
+      <div className='section center'>
+        <img src={desktopDesign2} alt="Englishtown desktop design" loading="lazy" />
       </div>
       <Container>
         <div className='section'>
           <h2>Next Steps</h2>
           <p>Improve responsiveness on mobile and tablet</p>
           <div className='flexbox'>
-            <div className='image'><img src={mobileDesign1} alt="Englishtown mobile design" loading="lazy"/></div>
-            <div className='image'><img src={mobileDesign2} alt="Englishtown mobile design" loading="lazy"/></div>
-            <div className='image'><img src={mobileDesign3} alt="Englishtown mobile design" loading="lazy"/></div>
+            <div className='image'><img src={mobileDesign1} alt="Englishtown mobile design" loading="lazy" /></div>
+            <div className='image'><img src={mobileDesign2} alt="Englishtown mobile design" loading="lazy" /></div>
+            <div className='image'><img src={mobileDesign3} alt="Englishtown mobile design" loading="lazy" /></div>
           </div>
           <div className='flexbox two'>
-            <div className='image'><img src={desktopDesign1} alt="Englishtown desktop design" loading="lazy"/></div>
-            <div className='image'><img src={desktopDesign3} alt="Englishtown desktop design" loading="lazy"/></div>
+            <div className='image'><img src={desktopDesign1} alt="Englishtown desktop design" loading="lazy" /></div>
+            <div className='image'><img src={desktopDesign3} alt="Englishtown desktop design" loading="lazy" /></div>
           </div>
           <div className='center'>
-            <img src={desktopDesign4} alt="Englishtown desktop design" loading="lazy"/>
+            <img src={desktopDesign4} alt="Englishtown desktop design" loading="lazy" />
           </div>
         </div>
         <div className='section'>

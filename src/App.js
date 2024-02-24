@@ -7,12 +7,13 @@ import Home from './pages/Home'
 import MyStory from './pages/MyStory'
 import Projects from './pages/Projects'
 import ProjectsOverview from './pages/ProjectsOverview'
-import BrandDesign from './pages/BrandDesign'
+import BrandIdentity from './pages/BrandIdentity'
 import BadgeDesign from './pages/BadgeDesign'
 import BoothDesign from './pages/BoothDesign'
 import EFSet from './pages/EFSet'
 import WebDesign from './pages/WebDesign'
 import ReHome from './pages/ReHome'
+import Fitsio from './pages/Fitsio'
 import LetsTalk from './pages/LetsTalk'
 import NoPage from './pages/NoPage'
 import Resume from './pages/Resume'
@@ -27,11 +28,12 @@ function App() {
             <Route path="my-story" element={<MyStory />} />
             <Route path="projects" element={<Projects />}>
               <Route index element={<ProjectsOverview />} />
-              <Route path="brand-design" element={<BrandDesign />} />
+              <Route path="brand-identity" element={<BrandIdentity />} />
               <Route path="badge-design" element={<BadgeDesign />} />
               <Route path="booth-design" element={<BoothDesign />} />
               <Route path="ef-set" element={<EFSet />} />
               <Route path="web-design" element={<WebDesign />} />
+              <Route path="fitsio" element={<Fitsio />} />
               <Route path="re-home" element={<ReHome />} />
             </Route>
             <Route path="lets-talk" element={<LetsTalk />} />
