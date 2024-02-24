@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.780c9605.css",
-    "main.js": "/static/js/main.75bd32f5.js",
-    "static/js/787.12a03372.chunk.js": "/static/js/787.12a03372.chunk.js",
+    "main.css": "/static/css/main.4fe84414.css",
+    "main.js": "/static/js/main.3a9de319.js",
+    "static/js/787.8edd0c10.chunk.js": "/static/js/787.8edd0c10.chunk.js",
     "static/media/23bookfair.mov": "/static/media/23bookfair.f937f676aaf6b6437726.mov",
     "static/media/comp_1.mp4": "/static/media/comp_1.c9b7b4a8cf206e788b2d.mp4",
     "static/media/container_1.png": "/static/media/container_1.44b566eae07339624886.png",
@@ -131,12 +131,12 @@
     "static/media/value_3.svg": "/static/media/value_3.264805dc23126e5821de676e653439ca.svg",
     "index.html": "/index.html",
     "static/media/value_1.svg": "/static/media/value_1.0f68af5242eafec153e12c73a23723ea.svg",
-    "main.780c9605.css.map": "/static/css/main.780c9605.css.map",
-    "main.75bd32f5.js.map": "/static/js/main.75bd32f5.js.map",
-    "787.12a03372.chunk.js.map": "/static/js/787.12a03372.chunk.js.map"
+    "main.4fe84414.css.map": "/static/css/main.4fe84414.css.map",
+    "main.3a9de319.js.map": "/static/js/main.3a9de319.js.map",
+    "787.8edd0c10.chunk.js.map": "/static/js/787.8edd0c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.780c9605.css",
-    "static/js/main.75bd32f5.js"
+    "static/css/main.4fe84414.css",
+    "static/js/main.3a9de319.js"
   ]
 }
