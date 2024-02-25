@@ -16,8 +16,10 @@ const ScrollClassAdder = (el, className, throttleTime) => {
         } else {
           setIsScrolled(false);
         }
+        console.log(document.documentElement.scrollTop);
+        console.log("scroll position:", scrollPosition, ", target element middle:",targetElementMiddle, "target element:", targetElement);
       }
-      // console.log("scroll position:", scrollPosition, ", target element middle:",targetElementMiddle, "target element:", targetElement);
+
     }, throttleTime);
     window.addEventListener("scroll", handleScroll);
     return () => {

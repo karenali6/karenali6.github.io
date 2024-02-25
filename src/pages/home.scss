@@ -74,7 +74,7 @@ $offset-y1: 100vh;
       top: 0;
       width: 100%;
       height: 100%;
-      transition: all 1.5s;
+      transition: all 1s ease-out;
       clip-path: polygon(
         calc($center-x - $offset-x) calc($center-y - $offset-y), 
         calc($center-x + $offset-x) calc($center-y - $offset-y), 
@@ -82,7 +82,6 @@ $offset-y1: 100vh;
         calc($center-x - $offset-x) calc($center-y + $offset-y) 
       );
       @include media-breakpoint-up(lg) { 
-        transition: all 1.5s;
         clip-path: polygon(
           calc($center-x - $offset-x-lg) calc($center-y - $offset-y-lg), 
           calc($center-x + $offset-x-lg) calc($center-y - $offset-y-lg), 
@@ -113,7 +112,7 @@ $offset-y1: 100vh;
         margin-left: auto;
         margin-right: auto;
         height: fit-content;
-        transition: all 1.5s;
+        transition: all 1s ease-out;
         @include media-breakpoint-up(lg) {
           max-width: 350px;
         }
