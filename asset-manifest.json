@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4b23201.css",
-    "main.js": "/static/js/main.9d0e96b2.js",
+    "main.css": "/static/css/main.f7e74812.css",
+    "main.js": "/static/js/main.9df00268.js",
     "static/js/787.8edd0c10.chunk.js": "/static/js/787.8edd0c10.chunk.js",
     "static/media/23bookfair.mov": "/static/media/23bookfair.f937f676aaf6b6437726.mov",
     "static/media/SS_billboard2.jpg": "/static/media/SS_billboard2.8391d8b018000735e211.jpg",
@@ -11,6 +11,7 @@
     "static/media/XHSpost.jpg": "/static/media/XHSpost.654e41cc727895dfd9e4.jpg",
     "static/media/YL_billboard_2.jpg": "/static/media/YL_billboard_2.69b08b8afe6c1a07acf8.jpg",
     "static/media/container_1.png": "/static/media/container_1.44b566eae07339624886.png",
+    "static/media/bucket_list_for_fb_ig.mp4": "/static/media/bucket_list_for_fb_ig.ae6b1158f9ca9c1501d9.mp4",
     "static/media/badge_design_2.png": "/static/media/badge_design_2.130de2787ac9e64a3eb4.png",
     "static/media/tea.mp4": "/static/media/tea.e936d3213cffb32aef64.mp4",
     "static/media/booth2023.png": "/static/media/booth2023.f6cf29196f0132e2c809.png",
@@ -20,6 +21,7 @@
     "static/media/TW_billboard.jpg": "/static/media/TW_billboard.acc3b7a2321d6dec2e82.jpg",
     "static/media/TW_billboard_outline.jpg": "/static/media/TW_billboard_outline.e038b9a0031fcb26d726.jpg",
     "static/media/SS_billboard.png": "/static/media/SS_billboard.7d6e2227d98cbb36805d.png",
+    "static/media/Office_WinterSolstice_V2.mp4": "/static/media/Office_WinterSolstice_V2.9b38d77f2d9d919d4d8a.mp4",
     "static/media/KT_billboard_4.jpg": "/static/media/KT_billboard_4.f06fa94bf4371e5ea5e2.jpg",
     "static/media/KT_billboard_2.jpg": "/static/media/KT_billboard_2.7d7f34b42764358de7ae.jpg",
     "static/media/book-cover.png": "/static/media/book-cover.7b3da86e96298e578941.png",
@@ -173,12 +175,12 @@
     "static/media/value_3.svg": "/static/media/value_3.264805dc23126e5821de676e653439ca.svg",
     "index.html": "/index.html",
     "static/media/value_1.svg": "/static/media/value_1.0f68af5242eafec153e12c73a23723ea.svg",
-    "main.a4b23201.css.map": "/static/css/main.a4b23201.css.map",
-    "main.9d0e96b2.js.map": "/static/js/main.9d0e96b2.js.map",
+    "main.f7e74812.css.map": "/static/css/main.f7e74812.css.map",
+    "main.9df00268.js.map": "/static/js/main.9df00268.js.map",
     "787.8edd0c10.chunk.js.map": "/static/js/787.8edd0c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4b23201.css",
-    "static/js/main.9d0e96b2.js"
+    "static/css/main.f7e74812.css",
+    "static/js/main.9df00268.js"
   ]
 }
