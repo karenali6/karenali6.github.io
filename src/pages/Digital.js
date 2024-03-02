@@ -1,4 +1,4 @@
-import React, {useState, useEffect,useRef} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import OtherProjectsButton from '../components/OtherProjectsButton'
 import banner from "../assets/images/digital/banner.png"
 import bannerMobile from "../assets/images/digital/banner_mobile.jpg"
@@ -19,16 +19,16 @@ import useIntersectionObserver from '@react-hook/intersection-observer'
 
 const Digital = () => {
   const videoRef = useRef();
-const [isLoad, setIsLoad] = useState(false);
-const { isIntersecting } = useIntersectionObserver(videoRef);
+  const [isLoad, setIsLoad] = useState(false);
+  const { isIntersecting } = useIntersectionObserver(videoRef);
 
-useEffect(() => {
-  if (isIntersecting && !isLoad) {
-    setIsLoad(true);
-    // console.log(isLoad, isIntersecting);
-  }
+  useEffect(() => {
+    if (isIntersecting && !isLoad) {
+      setIsLoad(true);
+      // console.log(isLoad, isIntersecting);
+    }
 
-}, [isIntersecting, isLoad]);
+  }, [isIntersecting, isLoad]);
 
   return (
     <div id='digital' className='project'>
@@ -68,7 +68,7 @@ useEffect(() => {
           <h2>Gif poster - Happy Winter solstice</h2>
           {/* <img src={happyWinter} alt="Happy Winter solstice" loading='lazy' /> */}
           <div className='video' ref={videoRef}>
-            <video controls playsInline preload={isLoad ? "auto" : "none"} poster={happyWinter}>
+            <video autoPlay loop muted playsInline>
               <source src={happyWinterVideo} type="video/mp4" />
               <img src={happyWinter} alt="happy winter" loading="lazy" title="Your browser does not support the video tag." />
             </video>
@@ -77,7 +77,7 @@ useEffect(() => {
         <div className="section center">
           <h2>Social media CNY creative</h2>
           <div className='video' ref={videoRef}>
-            <video controls playsInline preload={isLoad ? "auto" : "none"} poster={bucketList}>
+            <video autoPlay loop muted playsInline>
               <source src={bucketListVideo} type="video/mp4" />
               <img src={bucketList} alt="bucket list" loading="lazy" title="Your browser does not support the video tag." />
             </video>
