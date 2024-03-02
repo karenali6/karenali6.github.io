@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f7e74812.css",
-    "main.js": "/static/js/main.9df00268.js",
+    "main.js": "/static/js/main.33912bfa.js",
     "static/js/787.8edd0c10.chunk.js": "/static/js/787.8edd0c10.chunk.js",
     "static/media/23bookfair.mov": "/static/media/23bookfair.f937f676aaf6b6437726.mov",
     "static/media/SS_billboard2.jpg": "/static/media/SS_billboard2.8391d8b018000735e211.jpg",
@@ -176,11 +176,11 @@
     "index.html": "/index.html",
     "static/media/value_1.svg": "/static/media/value_1.0f68af5242eafec153e12c73a23723ea.svg",
     "main.f7e74812.css.map": "/static/css/main.f7e74812.css.map",
-    "main.9df00268.js.map": "/static/js/main.9df00268.js.map",
+    "main.33912bfa.js.map": "/static/js/main.33912bfa.js.map",
     "787.8edd0c10.chunk.js.map": "/static/js/787.8edd0c10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7e74812.css",
-    "static/js/main.9df00268.js"
+    "static/js/main.33912bfa.js"
   ]
 }
