@@ -13,11 +13,11 @@
 
   .flexbox {
     img {
-      width: 50%;
+      max-width: 50%;
     }
     &.custom {
       img {
-        // max-width: unset;
+        max-width: unset;
         &:first-child {
           width: 34.3%;
         }
