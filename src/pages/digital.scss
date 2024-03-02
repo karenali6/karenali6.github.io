@@ -1,0 +1,31 @@
+#digital {
+  .banner {
+    .image {
+      &::before {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  h2 {
+    text-align: start;
+  }
+
+  .flexbox {
+    img {
+      width: 50%;
+    }
+    &.custom {
+      img {
+        // max-width: unset;
+        &:first-child {
+          width: 34.3%;
+        }
+        &:last-child {
+          width: 65.7%;
+        }
+      }
+    }
+  }
+
+}

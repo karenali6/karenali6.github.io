@@ -1,21 +1,18 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../components/Contact'
-import background1 from "../assets/images/home/container_1.png"
-import resultBackground from "../assets/images/home/container_2.jpg"
-import cloud from "../assets/images/home/cloud.png"
-import background from "../assets/images/home/background.jpg"
-// import backgroundMobile from "../assets/images/home/background_mobile.jpg"
+import background from "../assets/images/home/container_1.png"
 import arrow from "../assets/images/icons/arrow.png"
 import reHome from "../assets/images/home/rehome.png"
 import badgeDesign from "../assets/images/home/badge_design.png"
 import efSet from "../assets/images/home/EF_SET.png"
 import hult from "../assets/images/home/HULT.png"
+import brochure from "../assets/images/home/brochure.png"
+import XHS from "../assets/images/home/XHS_LP.png"
 import arrowBlack from "../assets/images/icons/arrow_black.png"
 import ScrollClassAdder from '../components/ScrollClassAdder'
 import Container from "react-bootstrap/Container"
 import Button from 'react-bootstrap/Button'
-
 
 const Home = () => {
   const classNames = [
@@ -25,33 +22,11 @@ const Home = () => {
     ScrollClassAdder("#projects >div:nth-child(4)", "scrolled", 200)
   ];
 
-  const addClassToElement = () => {
-    const greeting = document.getElementById("greeting");
-    if (greeting) {
-      greeting.classList.add("scrolled");
-    }
-    // const greeting1 = document.getElementById("greeting1");
-    // if (greeting1) {
-    //   greeting1.classList.add("scrolled");
-    // }
-  }
-
-  useEffect(() => {
-    if (document.readyState === "complete") {
-      setTimeout(addClassToElement, 1000);
-    } else {
-      window.addEventListener("load", addClassToElement);
-      return () => {
-        window.removeEventListener("load", addClassToElement);
-      }
-    }
-  }, []);
-
   return (
     <div id="home">
-      <div id="greeting1" className={ScrollClassAdder("#greeting1", "scrolled", 200)}>
+      <div id="greeting" className={ScrollClassAdder("#greeting", "scrolled", 200)}>
         <div className='banner'>
-          <img src={background1} alt="background" loading='lazy' className='bg' />
+          <img src={background} alt="background" loading='lazy' className='bg' />
           <div className='overlay'></div>
         </div>
         <Container>
@@ -64,20 +39,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      {/* <div id="greeting">
-        <div className='banner'>
-          <img src={background} alt="background" loading='lazy' className='bg' />
-        </div>
-        <Container>
-          <div className='flexbox'>
-            <div className='content'>
-              <div className='title'>Hello there! <span>I’m Karena</span></div>
-              <p className='intro'>A Multimedia Designer at EF who loves to creating digital experience for <span>people</span>.</p>
-              <Button variant='light' href="/my-story">About me</Button>
-            </div>
-          </div>
-        </Container>
-      </div> */}
+
       <div id="slogan" className={ScrollClassAdder("#slogan", "scrolled", 200)}>
         <Container>
           <div className='title'>“Simple is Better”</div>
@@ -90,18 +52,31 @@ const Home = () => {
       <div id="projects">
         <div className={`project ${classNames[0]}`}>
           <div className='image'>
-            <img src={reHome} alt="RE-Home" loading="lazy" />
+            <img src={XHS} alt="XHS Post" loading="lazy" />
           </div>
           <div className='content'>
             <div className='wrapper container'>
-              <div className='hashtag'><span>#BRANDING</span><span>#UI</span><span>#UXRESERCHER</span><span>#DESIGNER STRATEGY</span></div>
-              <div className='title'>RE-Home</div>
-              <p>Re-Home is a local animals adoption app that's help users easily to find the matched pet to adopt. Re-Home app strives to reduce the homeless dog numbers.They offer a high level flow to simplify the adoption process.</p>
-              <Link to="/projects/re-home"><img src={arrowBlack} alt="arrow" loading="lazy" className='arrow' /></Link>
+              <div className='hashtag'><span>#LANDINGPAGE</span><span>#GIFBANNER</span><span>#EDM</span><span>#DIGITALDESIGN</span></div>
+              <div className='title'>Digital design</div>
+              <p>Create an ideas and strategies into engaging multimedia content, to support digital marketing campaigns across social media and digital platforms.</p>
+              <Link to="/projects/digital"><img src={arrowBlack} alt="arrow" loading="lazy" className='arrow' /></Link>
             </div>
           </div>
         </div>
         <div className={`project ${classNames[1]}`}>
+          <div className='image'>
+            <img src={brochure} alt="brochure" loading="lazy" />
+          </div>
+          <div className='content'>
+            <div className='wrapper container'>
+              <div className='hashtag'><span>#BRANDING</span><span>#PRINT</span><span>#GRAPHIC</span></div>
+              <div className='title'>Print design</div>
+              <p>Create visual concepts and develop the overall layout and production design for company such as advertisements, brochures, booklet, flyer...etc.</p>
+              <Link to="/projects/print"><img src={arrowBlack} alt="arrow" loading="lazy" className='arrow' /></Link>
+            </div>
+          </div>
+        </div>
+        <div className={`project ${classNames[2]}`}>
           <div className='image'>
             <img src={badgeDesign} alt="Badge Design" loading="lazy" />
           </div>
@@ -114,7 +89,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={`project ${classNames[2]}`}>
+        <div className={`project ${classNames[3]}`}>
           <div className='image'>
             <img src={efSet} alt="EF SET" loading="lazy" />
           </div>
@@ -127,20 +102,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={`project ${classNames[3]}`}>
-          <div className='image'>
-            <img src={hult} alt="HULT" loading="lazy" />
-          </div>
-          <div className='content'>
-            <div className='wrapper container'>
-              <div className='hashtag'><span>#BRANDING</span><span>#WEBDESIGN</span><span>#UI</span><span>#UX</span><span>#LANDINGPAGE</span></div>
-              <div className='title'>Landing Page / Web Design</div>
-              <p>Plan to delivering top-notch quality UI/UX design for your Website, Landing page by using Figma and Adobe creative suite.</p>
-              <p>Having usability and user experience in mind I will do brainstorming and research about your project to deliver attractively, user-friendly, and interactive UI designs.</p>
-              <Link to="/projects/web-design"><img src={arrowBlack} alt="arrow" loading="lazy" className='arrow' /></Link>
-            </div>
-          </div>
-        </div>
+
       </div>
       <Container>
         <Contact />

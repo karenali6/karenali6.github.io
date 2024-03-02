@@ -1,24 +1,21 @@
 .project {
   .banner {
     position: relative;
-    margin-bottom: $padding-y * 5;
+    margin-bottom: 50px;
 
     @include media-breakpoint-up(lg) {
-      margin-bottom: 100px;
+      margin-bottom: 150px;
     }
 
     .image {
-      @include media-breakpoint-down(sm) {
-        position: relative;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-        }
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
       }
 
       img {
@@ -80,7 +77,7 @@
       align-items: flex-end;
 
       @include media-breakpoint-up(lg) {
-        padding-bottom: $padding-y * 5;
+        padding-bottom: 50px;
       }
 
       .keypoint {
@@ -203,7 +200,7 @@
     margin-bottom: 50px;
 
     @include media-breakpoint-up(lg) {
-      margin-bottom: 100px;
+      margin-bottom: 150px;
     }
   }
 

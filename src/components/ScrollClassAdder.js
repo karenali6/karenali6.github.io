@@ -11,7 +11,7 @@ const ScrollClassAdder = (el, className, throttleTime) => {
       const targetElement = typeof el === 'string' ? document.querySelector(el) : el;
       if(targetElement) {
         const targetElementMiddle = (targetElement.getBoundingClientRect().top + targetElement.getBoundingClientRect().bottom) * 0.5;
-        if(document.documentElement.scrollTop != 0 && scrollPosition > targetElementMiddle) {;
+        if(document.documentElement.scrollTop !== 0 && scrollPosition > targetElementMiddle) {;
           setIsScrolled(true);
         } else {
           setIsScrolled(false);
