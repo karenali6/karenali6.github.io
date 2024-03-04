@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.f7e74812.css",
-    "main.js": "/static/js/main.33912bfa.js",
+    "main.css": "/static/css/main.d2920620.css",
+    "main.js": "/static/js/main.e64381cc.js",
     "static/js/787.8edd0c10.chunk.js": "/static/js/787.8edd0c10.chunk.js",
     "static/media/23bookfair.mov": "/static/media/23bookfair.f937f676aaf6b6437726.mov",
+    "static/media/phone_wheel_of_teachers.gif": "/static/media/phone_wheel_of_teachers.a5328df7e0ad6fbf78e3.gif",
     "static/media/SS_billboard2.jpg": "/static/media/SS_billboard2.8391d8b018000735e211.jpg",
     "static/media/comp_1.mp4": "/static/media/comp_1.c9b7b4a8cf206e788b2d.mp4",
     "static/media/banner_mobile.jpg": "/static/media/banner_mobile.7e5764337c39fb846445.jpg",
@@ -19,8 +20,10 @@
     "static/media/badge_design.png": "/static/media/badge_design.76329e7ac5d2c624e4c1.png",
     "static/media/combination.png": "/static/media/combination.719f7ed11ae11774baa7.png",
     "static/media/TW_billboard.jpg": "/static/media/TW_billboard.acc3b7a2321d6dec2e82.jpg",
+    "static/media/happy_winter.gif": "/static/media/happy_winter.f82a10211cfebf63efb8.gif",
     "static/media/TW_billboard_outline.jpg": "/static/media/TW_billboard_outline.e038b9a0031fcb26d726.jpg",
     "static/media/SS_billboard.png": "/static/media/SS_billboard.7d6e2227d98cbb36805d.png",
+    "static/media/bucket_list_for_fb_ig.gif": "/static/media/bucket_list_for_fb_ig.b5bb704a5f820371aef8.gif",
     "static/media/Office_WinterSolstice_V2.mp4": "/static/media/Office_WinterSolstice_V2.9b38d77f2d9d919d4d8a.mp4",
     "static/media/KT_billboard_4.jpg": "/static/media/KT_billboard_4.f06fa94bf4371e5ea5e2.jpg",
     "static/media/KT_billboard_2.jpg": "/static/media/KT_billboard_2.7d7f34b42764358de7ae.jpg",
@@ -175,12 +178,12 @@
     "static/media/value_3.svg": "/static/media/value_3.264805dc23126e5821de676e653439ca.svg",
     "index.html": "/index.html",
     "static/media/value_1.svg": "/static/media/value_1.0f68af5242eafec153e12c73a23723ea.svg",
-    "main.f7e74812.css.map": "/static/css/main.f7e74812.css.map",
-    "main.33912bfa.js.map": "/static/js/main.33912bfa.js.map",
+    "main.d2920620.css.map": "/static/css/main.d2920620.css.map",
+    "main.e64381cc.js.map": "/static/js/main.e64381cc.js.map",
     "787.8edd0c10.chunk.js.map": "/static/js/787.8edd0c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7e74812.css",
-    "static/js/main.33912bfa.js"
+    "static/css/main.d2920620.css",
+    "static/js/main.e64381cc.js"
   ]
 }
