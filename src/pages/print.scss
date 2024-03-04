@@ -1,4 +1,9 @@
 #print {
+  .section {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 250px;
+    }
+  }
   .banner {
     .image {
       &::before {
@@ -8,9 +13,16 @@
   }
 
   h2 {
+    font-size: 14px;
     text-align: start;
+    margin-bottom: 0px;
   }
-
+  .description {
+    text-align: start;
+    font-size: 14px;
+    font-weight: 300;
+ 
+  }
   .flexbox {
     img {
       width: 50%;

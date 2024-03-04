@@ -19,7 +19,7 @@ import Container from 'react-bootstrap/Container'
 const ProjectsOverview = () => {
   return (
     <>
-      <div id='projects'>
+      <div id='projects' className='project'>
         <div className='banner'>
           <div className='image'>
             <img src={banner} alt="More projects banner" className='desktop' />

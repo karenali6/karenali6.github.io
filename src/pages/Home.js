@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../components/Contact'
 import background from "../assets/images/home/container_1.png"
@@ -13,8 +13,10 @@ import arrowBlack from "../assets/images/icons/arrow_black.png"
 import ScrollClassAdder from '../components/ScrollClassAdder'
 import Container from "react-bootstrap/Container"
 import Button from 'react-bootstrap/Button'
+import throttle from 'lodash.throttle'
 
 const Home = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const classNames = [
     ScrollClassAdder("#projects >div:first-child", "scrolled", 200),
     ScrollClassAdder("#projects >div:nth-child(2)", "scrolled", 200),
@@ -22,9 +24,20 @@ const Home = () => {
     ScrollClassAdder("#projects >div:nth-child(4)", "scrolled", 200)
   ];
 
+  useEffect(() => {
+    const handleScroll = throttle(() => {
+      setIsScrolled(true);
+    }, 250);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, [isScrolled]);
+
   return (
     <div id="home">
-      <div id="greeting" className={ScrollClassAdder("#greeting", "scrolled", 200)}>
+      <div id="greeting" className={isScrolled ? "scrolled" : null}>
         <div className='banner'>
           <img src={background} alt="background" loading='lazy' className='bg' />
           <div className='overlay'></div>
@@ -52,19 +65,6 @@ const Home = () => {
       <div id="projects">
         <div className={`project ${classNames[0]}`}>
           <div className='image'>
-            <img src={XHS} alt="XHS Post" loading="lazy" />
-          </div>
-          <div className='content'>
-            <div className='wrapper container'>
-              <div className='hashtag'><span>#LANDINGPAGE</span><span>#GIFBANNER</span><span>#EDM</span><span>#DIGITALDESIGN</span></div>
-              <div className='title'>Digital design</div>
-              <p>Create an ideas and strategies into engaging multimedia content, to support digital marketing campaigns across social media and digital platforms.</p>
-              <Link to="/projects/digital"><img src={arrowBlack} alt="arrow" loading="lazy" className='arrow' /></Link>
-            </div>
-          </div>
-        </div>
-        <div className={`project ${classNames[1]}`}>
-          <div className='image'>
             <img src={brochure} alt="brochure" loading="lazy" />
           </div>
           <div className='content'>
@@ -76,6 +76,20 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className={`project ${classNames[1]}`}>
+          <div className='image'>
+            <img src={XHS} alt="XHS Post" loading="lazy" />
+          </div>
+          <div className='content'>
+            <div className='wrapper container'>
+              <div className='hashtag'><span>#LANDINGPAGE</span><span>#GIFBANNER</span><span>#EDM</span><span>#DIGITALDESIGN</span></div>
+              <div className='title'>Digital design</div>
+              <p>Create an ideas and strategies into engaging multimedia content, to support digital marketing campaigns across social media and digital platforms.</p>
+              <Link to="/projects/digital"><img src={arrowBlack} alt="arrow" loading="lazy" className='arrow' /></Link>
+            </div>
+          </div>
+        </div>
+
         <div className={`project ${classNames[2]}`}>
           <div className='image'>
             <img src={badgeDesign} alt="Badge Design" loading="lazy" />

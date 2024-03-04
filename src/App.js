@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga';
 import './custom.scss'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
@@ -21,6 +22,13 @@ import NoPage from './pages/NoPage'
 import Resume from './pages/Resume'
 
 function App() {
+  // const TRACKING_ID = "G-0QKR0542GX"; // OUR_TRACKING_ID
+  // ReactGA.initialize(TRACKING_ID);
+
+  // const location = useLocation();
+  // useEffect(() => {
+  //   ReactGA.pageview(location.pathname + location.search);
+  // }, [location]);
   return (
     <BrowserRouter>
       <ScrollToTop>

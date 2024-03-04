@@ -52,6 +52,23 @@ const BoothDesign = () => {
       },
     ]
   };
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
+  };
 
   useEffect(() => {
     if (isIntersecting && !isLoad) {
@@ -104,9 +121,8 @@ const BoothDesign = () => {
             <li>Incorporate social media elements into your booth design to encourage attendees to share their experience to increase online visibility and engagement</li>
           </ol>
         </div>
-      </Container>
-      
-      <Slider {...settings} className="section">
+
+        <Slider {...settings2} className="section">
           <div>
             <h2>Hong Kong Book Fair 2023</h2>
             <img src={booth2023} alt="Hong Kong Book Fair 2023" loading="lazy" />
@@ -120,7 +136,7 @@ const BoothDesign = () => {
             <img src={booth2022} alt="Hong Kong Book Fair 2022" loading="lazy" />
           </div>
         </Slider>
-      <Container>
+
         <div className='section center'>
           <img src={colours} alt="Colours" loading="lazy" />
           <div className='video' ref={videoRef}>

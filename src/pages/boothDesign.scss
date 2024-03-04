@@ -62,22 +62,22 @@
   }
 
   .slick-slide {
-    width: 100%;
-    @include media-breakpoint-up(sm) {
-      width: $sm-max-width;
-    }
+    // width: 100%;
+    // @include media-breakpoint-up(sm) {
+    //   width: $sm-max-width;
+    // }
 
-    @include media-breakpoint-up(md) {
-      width: $md-max-width;
-    }
+    // @include media-breakpoint-up(md) {
+    //   width: $md-max-width;
+    // }
 
-    @include media-breakpoint-up(lg) {
-      width: $lg-max-width;
-    }
+    // @include media-breakpoint-up(lg) {
+    //   width: $lg-max-width;
+    // }
 
-    @include media-breakpoint-up(xl) {
-      width: $xl-max-width;
-    }
+    // @include media-breakpoint-up(xl) {
+    //   width: $xl-max-width;
+    // }
     
     h2 {
       text-align: center;
