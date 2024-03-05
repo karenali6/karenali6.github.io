@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7d5c061.css",
-    "main.js": "/static/js/main.f0b0c982.js",
+    "main.css": "/static/css/main.4da495e0.css",
+    "main.js": "/static/js/main.f9e67171.js",
     "static/js/787.8edd0c10.chunk.js": "/static/js/787.8edd0c10.chunk.js",
     "static/media/23bookfair.mov": "/static/media/23bookfair.f937f676aaf6b6437726.mov",
     "static/media/phone_wheel_of_teachers.gif": "/static/media/phone_wheel_of_teachers.a5328df7e0ad6fbf78e3.gif",
     "static/media/SS_billboard2.jpg": "/static/media/SS_billboard2.8391d8b018000735e211.jpg",
     "static/media/comp_1.mp4": "/static/media/comp_1.c9b7b4a8cf206e788b2d.mp4",
-    "static/media/digital.jpg": "/static/media/digital.95119ed839ec79581c32.jpg",
     "static/media/XHSpost.jpg": "/static/media/XHSpost.654e41cc727895dfd9e4.jpg",
     "static/media/YL_billboard_2.jpg": "/static/media/YL_billboard_2.69b08b8afe6c1a07acf8.jpg",
     "static/media/container_1.png": "/static/media/container_1.44b566eae07339624886.png",
@@ -16,6 +15,7 @@
     "static/media/booth2023.png": "/static/media/booth2023.f6cf29196f0132e2c809.png",
     "static/media/banner.png": "/static/media/banner.1c6dc760de6e97c0dc05.png",
     "static/media/badge_design.png": "/static/media/badge_design.76329e7ac5d2c624e4c1.png",
+    "static/media/digital.png": "/static/media/digital.2b5fba08ab3ce7cc4161.png",
     "static/media/combination.png": "/static/media/combination.719f7ed11ae11774baa7.png",
     "static/media/TW_billboard.jpg": "/static/media/TW_billboard.acc3b7a2321d6dec2e82.jpg",
     "static/media/TW_billboard_outline.jpg": "/static/media/TW_billboard_outline.e038b9a0031fcb26d726.jpg",
@@ -159,12 +159,12 @@
     "static/media/value_3.svg": "/static/media/value_3.264805dc23126e5821de676e653439ca.svg",
     "index.html": "/index.html",
     "static/media/value_1.svg": "/static/media/value_1.0f68af5242eafec153e12c73a23723ea.svg",
-    "main.e7d5c061.css.map": "/static/css/main.e7d5c061.css.map",
-    "main.f0b0c982.js.map": "/static/js/main.f0b0c982.js.map",
+    "main.4da495e0.css.map": "/static/css/main.4da495e0.css.map",
+    "main.f9e67171.js.map": "/static/js/main.f9e67171.js.map",
     "787.8edd0c10.chunk.js.map": "/static/js/787.8edd0c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7d5c061.css",
-    "static/js/main.f0b0c982.js"
+    "static/css/main.4da495e0.css",
+    "static/js/main.f9e67171.js"
   ]
 }
