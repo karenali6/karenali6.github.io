@@ -40,7 +40,7 @@ const Print = () => {
           <img src={bannerMobile} alt="Print banner" className='mobile' />
         </div>
         <div className='title'>
-          <div className='name'>Print</div>
+          <div className='name'>PRINT</div>
           <div className='summary'>Specialize in the creation of visual designs for printing such as brochures, flyers, business cards, billboard and a range of other printable marketing materials.</div>
         </div>
         
