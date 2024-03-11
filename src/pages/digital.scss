@@ -16,10 +16,44 @@
     }
   }
 
-  h2 {
-    text-align: start;
+  .name {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50vh;
+    font-weight: 700;
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 20px);
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40px;
+      border: 1px solid $black;
+    }
+  }
+  .summary {
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
   }
 
+  h2 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 100px;
+    transition: all 1s ease;
+    &:hover {
+      color: rgba(0,0,0,0.1);
+      letter-spacing: 0.05em;
+    }
+  }
   .flexbox {
     display: flex;
     flex-wrap: wrap;
@@ -75,9 +109,21 @@
       }
     }
   }
-  #XHS_landing {
-    width: 800px;
+
+  #social_media {
+    &.scrolled {
+      top: 0;
+      opacity: 1;
+    }
+    position: relative;
+    top: 300px;
+    opacity: 0;
+    transition: all 1s ease;
   }
+  #ig_feed {
+    margin-bottom: 100px;
+  }
+
   #happy_winter {
     width: 600px;
   }
