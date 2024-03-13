@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.81489579.css",
-    "main.js": "/static/js/main.bc933ac7.js",
+    "main.css": "/static/css/main.bc9d5cd0.css",
+    "main.js": "/static/js/main.8b9ffbde.js",
     "static/js/787.8edd0c10.chunk.js": "/static/js/787.8edd0c10.chunk.js",
     "static/media/23bookfair.mov": "/static/media/23bookfair.f937f676aaf6b6437726.mov",
     "static/media/phone_wheel_of_teachers.gif": "/static/media/phone_wheel_of_teachers.a5328df7e0ad6fbf78e3.gif",
@@ -159,12 +159,12 @@
     "static/media/value_3.svg": "/static/media/value_3.264805dc23126e5821de676e653439ca.svg",
     "index.html": "/index.html",
     "static/media/value_1.svg": "/static/media/value_1.0f68af5242eafec153e12c73a23723ea.svg",
-    "main.81489579.css.map": "/static/css/main.81489579.css.map",
-    "main.bc933ac7.js.map": "/static/js/main.bc933ac7.js.map",
+    "main.bc9d5cd0.css.map": "/static/css/main.bc9d5cd0.css.map",
+    "main.8b9ffbde.js.map": "/static/js/main.8b9ffbde.js.map",
     "787.8edd0c10.chunk.js.map": "/static/js/787.8edd0c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81489579.css",
-    "static/js/main.bc933ac7.js"
+    "static/css/main.bc9d5cd0.css",
+    "static/js/main.8b9ffbde.js"
   ]
 }
