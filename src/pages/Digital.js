@@ -53,13 +53,13 @@ const Digital = () => {
         </div>
       </div> */}
       <Container>
-        <div className="section center">
+        <div id="info" className={`section center ${isScrolled ? "scrolled" : null}`}>
           {/* <h2>Little Red Book Landing page</h2> */}
           <h2 className='name'>DIGITAL</h2>
           <div className='summary'>Creates, manages, and produces digital design solutions for a variety of uses: websites, product graphics, edm, landing page, different social media platform (Facebook, Instagram, Little Red Book) , brand campaigns and short video editing.</div>
           <img src={bannerMobile} alt="Little Red Book Landing page" loading='lazy' id="XHS_landing" />
         </div>
-        <div id="social_media" className={`section center ${ScrollClassAdder("#social_media > h2", "scrolled", 200)}`}>
+        <div className="section center">
           <h2>2024<br/>Social media</h2>
           <img src={igFeed} alt="Social media feeds" loading='lazy' id="ig_feed" />
           <img src={XHSPost} alt="Xiaohongshu post" loading='lazy' />

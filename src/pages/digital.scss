@@ -1,14 +1,23 @@
 #digital {
+  @include media-breakpoint-up(xl) {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .section {
     margin-bottom: 100px;
+
     @include media-breakpoint-up(lg) {
       &:not(:last-child) {
         margin-bottom: 250px;
       }
     }
   }
+
   .banner {
     margin-bottom: 100px;
+
     .image {
       &::before {
         background: rgba(0, 0, 0, 0.5);
@@ -23,6 +32,7 @@
     text-align: center;
     margin-top: 50vh;
     font-weight: 700;
+
     &::after {
       content: "";
       position: absolute;
@@ -35,6 +45,7 @@
       border: 1px solid $black;
     }
   }
+
   .summary {
     font-size: 14px;
     font-weight: 300;
@@ -49,35 +60,44 @@
     font-size: 14px;
     margin-bottom: 100px;
     transition: all 1s ease;
+
     &:hover {
-      color: rgba(0,0,0,0.1);
+      color: rgba(0, 0, 0, 0.1);
       letter-spacing: 0.05em;
     }
   }
+
   .flexbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     .box {
       &:first-child {
         flex-basis: 48%;
       }
+
       &:last-child {
         flex-basis: 40.4%;
       }
+
       .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 10px;
+
         img {
           max-width: 48%;
+
           @include media-breakpoint-up(lg) {
             max-width: 49%;
           }
         }
+
         +img {
           margin-bottom: 30px;
+
           @include media-breakpoint-up(lg) {
             margin-bottom: 60px;
           }
@@ -85,22 +105,27 @@
       }
     }
   }
+
   .phone {
     img {
       max-width: 50%;
     }
+
     @include media-breakpoint-up(xl) {
       position: relative;
       text-align: start;
       height: 1100px;
+
       img {
         max-height: 600px;
       }
+
       >img:first-child {
         margin-top: 100px;
         margin-left: 100px;
         transform: rotate(-15deg);
       }
+
       >img:last-child {
         position: absolute;
         top: 500px;
@@ -110,16 +135,29 @@
     }
   }
 
-  #social_media {
+  #info {
     &.scrolled {
-      top: 0;
-      opacity: 1;
+      .name, .summary {
+        top: 0;
+        opacity: 1;
+      }
     }
-    position: relative;
-    top: 300px;
-    opacity: 0;
-    transition: all 1s ease;
+
+    .name {
+      position: relative;
+      top: 300px;
+      opacity: 0;
+      transition: all 1s ease;
+    }
+
+    .summary {
+      position: relative;
+      top: 300px;
+      opacity: 0;
+      transition: all 1s ease 0.3s;
+    }
   }
+
   #ig_feed {
     margin-bottom: 100px;
   }
