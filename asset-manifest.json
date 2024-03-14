@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc9d5cd0.css",
-    "main.js": "/static/js/main.8b9ffbde.js",
+    "main.css": "/static/css/main.17b41d81.css",
+    "main.js": "/static/js/main.1f2d0104.js",
     "static/js/787.8edd0c10.chunk.js": "/static/js/787.8edd0c10.chunk.js",
     "static/media/23bookfair.mov": "/static/media/23bookfair.f937f676aaf6b6437726.mov",
     "static/media/phone_wheel_of_teachers.gif": "/static/media/phone_wheel_of_teachers.a5328df7e0ad6fbf78e3.gif",
@@ -18,9 +18,11 @@
     "static/media/digital.png": "/static/media/digital.2b5fba08ab3ce7cc4161.png",
     "static/media/combination.png": "/static/media/combination.719f7ed11ae11774baa7.png",
     "static/media/TW_billboard.jpg": "/static/media/TW_billboard.acc3b7a2321d6dec2e82.jpg",
+    "static/media/summer_1.png": "/static/media/summer_1.822a50f3df3398caf1a5.png",
     "static/media/TW_billboard_outline.jpg": "/static/media/TW_billboard_outline.e038b9a0031fcb26d726.jpg",
     "static/media/SS_billboard.png": "/static/media/SS_billboard.7d6e2227d98cbb36805d.png",
     "static/media/bucket_list_for_fb_ig.gif": "/static/media/bucket_list_for_fb_ig.b5bb704a5f820371aef8.gif",
+    "static/media/spirit.png": "/static/media/spirit.12b4b19190514d4f3901.png",
     "static/media/KT_billboard_4.jpg": "/static/media/KT_billboard_4.f06fa94bf4371e5ea5e2.jpg",
     "static/media/KT_billboard_2.jpg": "/static/media/KT_billboard_2.7d7f34b42764358de7ae.jpg",
     "static/media/book-cover.png": "/static/media/book-cover.7b3da86e96298e578941.png",
@@ -51,6 +53,7 @@
     "static/media/book-fair-2023-backdrop.jpg": "/static/media/book-fair-2023-backdrop.eee2bc107a963006c2df.jpg",
     "static/media/badge_70.png": "/static/media/badge_70.ce0359bbbb18a1c64e0c.png",
     "static/media/cover-back.png": "/static/media/cover-back.94f0063b48f4249e0a8b.png",
+    "static/media/summer_2.png": "/static/media/summer_2.2cc7397cc75fe92ded9e.png",
     "static/media/badge_on_phone.png": "/static/media/badge_on_phone.c513323380b8c7d18aa1.png",
     "static/media/YL_billboard.jpg": "/static/media/YL_billboard.78d9ff27b2ff40490502.jpg",
     "static/media/recycle_bag_1.png": "/static/media/recycle_bag_1.e182bf233611d0884a42.png",
@@ -101,6 +104,7 @@
     "static/media/usability-study.png": "/static/media/usability-study.9f4784e085e8749d270e.png",
     "static/media/image_4.webp": "/static/media/image_4.6db083fb74751ab4d723.webp",
     "static/media/diet.png": "/static/media/diet.270871811ac7098ea42b.png",
+    "static/media/colour_2.png": "/static/media/colour_2.2f804895dd1fafbe4bc5.png",
     "static/media/englishBite1.jpg": "/static/media/englishBite1.f1bd9ce4613ae3047605.jpg",
     "static/media/web4.jpg": "/static/media/web4.eac843f5a52c5d34a205.jpg",
     "static/media/brochureENG.jpg": "/static/media/brochureENG.614c20c1068660c75187.jpg",
@@ -159,12 +163,12 @@
     "static/media/value_3.svg": "/static/media/value_3.264805dc23126e5821de676e653439ca.svg",
     "index.html": "/index.html",
     "static/media/value_1.svg": "/static/media/value_1.0f68af5242eafec153e12c73a23723ea.svg",
-    "main.bc9d5cd0.css.map": "/static/css/main.bc9d5cd0.css.map",
-    "main.8b9ffbde.js.map": "/static/js/main.8b9ffbde.js.map",
+    "main.17b41d81.css.map": "/static/css/main.17b41d81.css.map",
+    "main.1f2d0104.js.map": "/static/js/main.1f2d0104.js.map",
     "787.8edd0c10.chunk.js.map": "/static/js/787.8edd0c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc9d5cd0.css",
-    "static/js/main.8b9ffbde.js"
+    "static/css/main.17b41d81.css",
+    "static/js/main.1f2d0104.js"
   ]
 }
