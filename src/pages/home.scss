@@ -70,13 +70,6 @@ $offset-y1: 100vh;
           }
         }
       }
-      ~.quick_link {
-        ul {
-          @include media-breakpoint-up(lg) {
-            color: $white;
-          }
-        }
-      }
     }
     .banner {
       position: absolute;
