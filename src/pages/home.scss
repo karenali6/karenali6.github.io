@@ -436,8 +436,7 @@ $offset-y1: 100vh;
     text-align: center;
     margin-bottom: $padding-y * 10;
     @include media-breakpoint-up(lg) {
-      font-size: 28px;
-      margin-bottom: $padding-y * 20;
+      font-size: 20px;
     }
     >span {
       vertical-align: middle;
@@ -468,19 +467,25 @@ $offset-y1: 100vh;
     }
     .content {
       position: absolute;
-      top: 46%;
-      left: 43%;
+      top: 43%;
+      left: 38%;
       color: $primary;
       font-weight: 700;
       font-family: 'Crimson Pro';
       font-style: italic;
+      font-size: 14px;
+      @include media-breakpoint-up(lg) {
+        top: 42%;
+        left: 37%;
+        font-size: 20px;
+      }
     }
     img {
       animation: rotation 10s linear infinite;
-      max-width: 300px;
-      // @include media-breakpoint-up(lg) {
-      //   margin-bottom: 200px;
-      // }
+      max-width: 150px;
+      @include media-breakpoint-up(lg) {
+        max-width: 200px;
+      }
     }
   }
 }
