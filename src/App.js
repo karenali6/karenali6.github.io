@@ -24,7 +24,7 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 
 function App() {
-  const TRACKING_ID = "G-G370EM3BGQ"; // OUR_TRACKING_ID
+  const TRACKING_ID = "G-KP4TSLFEDF"; // OUR_TRACKING_ID
   const location = useLocation();
   useEffect(() => {
     ReactGA.initialize(TRACKING_ID);
