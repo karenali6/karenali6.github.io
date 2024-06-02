@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import './custom.scss'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
@@ -24,12 +24,12 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 
 function App() {
-  const TRACKING_ID = "G-0QKR0542GX"; // OUR_TRACKING_ID
-  ReactGA.initialize(TRACKING_ID);
-
+  const TRACKING_ID = "G-G370EM3BGQ"; // OUR_TRACKING_ID
   const location = useLocation();
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
+    // ReactGA.pageview(location.pathname + location.search);
   }, [location]);
   return (
     <ScrollToTop>

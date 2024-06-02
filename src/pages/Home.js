@@ -68,7 +68,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      <div class="quick_link">
+      <div className="quick_link">
       <ul>
         <li><Link to="/my-story#about">About me</Link></li>
         <li><Link to="/projects">Projects</Link></li>
