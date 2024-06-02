@@ -22,15 +22,21 @@ import NoPage from './pages/NoPage'
 import Resume from './pages/Resume'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
+import TagManager from 'react-gtm-module';
 
 function App() {
-  const TRACKING_ID = "G-KP4TSLFEDF"; // OUR_TRACKING_ID
-  const location = useLocation();
-  useEffect(() => {
-    ReactGA.initialize(TRACKING_ID);
-    ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
-    // ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+  const tagManagerArgs = {
+    gtmId: 'GTM-T3P4P8JP'
+  }
+
+  TagManager.initialize(tagManagerArgs)
+  // const TRACKING_ID = "G-KP4TSLFEDF"; // OUR_TRACKING_ID
+  // const location = useLocation();
+  // useEffect(() => {
+  //   ReactGA.initialize(TRACKING_ID);
+  //   ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, [location]);
   return (
     <ScrollToTop>
       <Routes>
