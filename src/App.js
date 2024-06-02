@@ -30,11 +30,11 @@ function App() {
   }
 
   TagManager.initialize(tagManagerArgs)
-  // const TRACKING_ID = "G-KP4TSLFEDF"; // OUR_TRACKING_ID
+  // const TRACKING_ID = "G-FK3WLEG52P"; // OUR_TRACKING_ID
   // const location = useLocation();
   // useEffect(() => {
   //   ReactGA.initialize(TRACKING_ID);
-  //   ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
+  //   ReactGA.send({ hitType: "pageview", page: "/my-story", title: "Custom Title" });
   //   ReactGA.pageview(window.location.pathname + window.location.search);
   // }, [location]);
   return (
